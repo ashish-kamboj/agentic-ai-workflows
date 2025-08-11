@@ -36,8 +36,8 @@ agentic-ai-workflows/
    Refer to the [n8n documentation](https://docs.n8n.io/hosting/installation/) for installation instructions (Docker, npm, desktop app, etc.).
 
 2. **Import a Workflow:**  
-   - Go to the n8n editor UI.
-   - Click "Import" and upload the desired workflow JSON from this repo's `n8n/` folder.
+   - Go to the n8n editor UI.  
+   - Click "Import" and upload the desired workflow JSON from this repo's `n8n/` folder.  
    - Configure any required credentials or environment variables.
 
 3. **Run or Schedule the Workflow:**  
@@ -46,15 +46,15 @@ agentic-ai-workflows/
 ### 2. Using crewAI Workflows
 
 1. **Set up Python environment:**  
-   - Install Python 3.9+ (ideally in a virtual environment).
+   - Install Python 3.9+ (ideally in a virtual environment).  
    - Install crewAI:
      ```bash
      pip install crewai
      ```
 
 2. **Run a Workflow:**  
-   - Open the desired Python script from the `crewai/` directory.
-   - Review and adjust any required prompts, agent definitions, or credentials.
+   - Open the desired Python script from the `crewai/` directory.  
+   - Review and adjust any required prompts, agent definitions, or credentials.  
    - Run the script:
      ```bash
      python path/to/your_workflow.py
@@ -85,5 +85,3 @@ Below is a table listing all available crewAI workflows in this repository. This
 <!-- Add your crewAI workflows below. Copy and modify the row above for each workflow. -->
 
 ---
-
-_Built and maintained by [ashish-kamboj](https://github.com/ashish-kamboj)._
