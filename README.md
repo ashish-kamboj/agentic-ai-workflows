@@ -69,6 +69,7 @@ Below is a table listing all available n8n workflows in this repository. This ma
 | Workflow Name | Description | Inputs | Outputs | Special Notes |
 |--------------|-------------|--------|---------|--------------|
 |[wf_update_google_doc.json](https://github.com/ashish-kamboj/agentic-ai-workflows/blob/main/n8n/wf_update_google_doc.json)| Workflow that automatically updates Google Docs based on chat messages. It uses an AI agent with Ollama's Llama 3.2 model to process incoming chat messages and then inserts the AI-generated output into a specified Google Document. | **Chat Message:** Any text sent to the chat trigger | **Google Document Update:** The AI agent's output is automatically inserted into the specified Google Doc | **Ollama API:** Uses "Ollama account" credential for local LLM access <br> **Google Docs OAuth2:** Uses "Google cloud account" credential for document access|
+|[wf_get_output_using_llm.json](https://github.com/ashish-kamboj/agentic-ai-workflows/blob/main/n8n/wf_get_output_using_llm.json) |The workflow enables interactive conversations where users can send messages and receive AI-generated responses with memory retention capabilities. |**Chat Message:** Any text sent to the chat trigger | LLM generated response | **Ollama API:** Uses "Ollama account" credential for local LLM access |
 
 <!-- Add your n8n workflows below. Copy and modify the row above for each workflow. -->
 
