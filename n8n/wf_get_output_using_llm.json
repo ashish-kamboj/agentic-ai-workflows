@@ -1,0 +1,119 @@
+{
+  "name": "wf_get_output_using_llm",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        0,
+        0
+      ],
+      "id": "288f2fbc-e261-492c-ac3f-9237be5db878",
+      "name": "When chat message received",
+      "webhookId": "6ec3af92-b87c-6789-89d2-0aa48bdd17d3"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        208,
+        0
+      ],
+      "id": "9a98e5f8-9655-436c-aa7e-4c8314888456",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": "llama3.2:3b",
+        "options": {
+          "format": "default"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        80,
+        208
+      ],
+      "id": "a9f089d0-48d7-4d9c-bceb-44b3382e4e39",
+      "name": "Ollama Chat Model",
+      "credentials": {
+        "ollamaApi": {
+          "id": "TxBDg859kFDgmpeD",
+          "name": "Ollama account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        224,
+        208
+      ],
+      "id": "5876e678-2631-49fc-9529-18db5e2a95e7",
+      "name": "Simple Memory"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "7a93f16b-8c51-4706-9fe4-299ef2bfb9f7",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "204b5acb52f29149bac89eb2897abde2f6182d1276aa02c046856183e5765123"
+  },
+  "id": "Q8aasC30ohvQF4TU",
+  "tags": [
+    {
+      "createdAt": "2025-08-06T13:02:21.609Z",
+      "updatedAt": "2025-08-06T13:02:21.609Z",
+      "id": "Gj8O6iQd9xkyk5QH",
+      "name": "llm"
+    }
+  ]
+}
