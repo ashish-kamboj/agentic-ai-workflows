@@ -83,10 +83,7 @@ Below is a table listing all available crewAI workflows in this repository. This
 
 | Workflow Name | Description | Inputs | Outputs | Special Notes |
 |--------------|-------------|--------|---------|--------------|
-| [wf_agent_to_research_and_write_article](https://github.com/ashish-kamboj/agentic-ai-workflows/blob/main/crewai/wf_agent_to_research_and_write_article.ipynb) | Automate the process of researching, writing, and editing a blog article. It defines three agents—Content Planner, Content Writer, and Editor—each with specific roles and tasks. The workflow includes planning content, writing a draft, and editing for quality and style, all powered by LLMs. | Research topic | Structured research summary | - Uses the ollama/llama3.2:3b model via the Ollama API, which can be set up locally and is free to use.
-<br> - Agents are implemented with CrewAI and interact with the local LLM for fast, private inference.
-<br> The tasks are performed sequentially |
+| [wf_agent_to_research_and_write_article](https://github.com/ashish-kamboj/agentic-ai-workflows/blob/main/crewai/wf_agent_to_research_and_write_article.ipynb) | Automate the process of researching, writing, and editing a blog article. It defines three agents—Content Planner, Content Writer, and Editor—each with specific roles and tasks. The workflow includes planning content, writing a draft, and editing for quality and style, all powered by LLMs. | Research topic | Structured research summary | 1. Uses the ollama/llama3.2:3b model via the Ollama API, which can be set up locally and is free to use. <br> 2. Agents are implemented with CrewAI and interact with the local LLM for fast, private inference. <br> 3. The tasks are performed sequentially. |
 
-<!-- Add your crewAI workflows below. Copy and modify the row above for each workflow. -->
 
 ---
