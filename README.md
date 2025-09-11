@@ -124,6 +124,19 @@ Below is a table listing all available crewAI workflows in this repository. This
         </ol>
       </td>
     </tr>
+    <tr>
+      <td><a href="https://github.com/ashish-kamboj/agentic-ai-workflows/blob/main/crewai/wf_agent_for_travel_recommendation_with_mlflow_integration.ipynb">Agent for travel recommendation with mlflow integration</a></td>
+      <td>demonstrates integration between CrewAI and MLflow for tracking AI agent workflows. Creates a travel recommendation system that suggests the best city for photography travel and provide 5-day photography itinerary</td>
+      <td>No Input as such, it's part of prompt only but can be passed as input</b></td>
+      <td>5-day photography itenary for the choosed city</td>
+      <td>
+        <ol>
+          <li>Uses the ollama/llama3.2:3b model via the Ollama API, which can be set up locally and is free to use.</li>
+          <li>Agents are implemented with CrewAI and interact with the local LLM for fast, private inference.</li>
+          <li>Used MLflow, which provides a tracing feature that enhances LLM observability by capturing detailed information about the execution of application’s services. Tracing provides a way to record the inputs, outputs, and metadata associated with each intermediate step of a request, enabling you to easily pinpoint the source of bugs and unexpected behaviors.</li>
+        </ol>
+      </td>
+    </tr>
   </tbody>
 </table>
 
