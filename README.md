@@ -140,6 +140,7 @@ Below is a table listing all available crewAI workflows in this repository. This
     <tr>
       <td><a href="https://github.com/ashish-kamboj/agentic-ai-workflows/blob/main/crewai/wf_agent_for_summarization_and_translation_using_grok.ipynb">Agent for Summarization and Translation using Grok</a></td>
       <td>Demonstrates a simple two-agent workflow using CrewAI: Documentation Summarizer produces a concise summary and Technical Translator converts the summary to Hindi</b></td>
+      <td>No Input as such, it's part of prompt only but can be passed as input</b></td>
       <td>Text Summary and translation in choosen or provided language</td>
       <td>
         <ol>
