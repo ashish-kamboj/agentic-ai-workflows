@@ -138,13 +138,13 @@ Below is a table listing all available crewAI workflows in this repository. This
       </td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ashish-kamboj/agentic-ai-workflows/blob/main/crewai/wf_agent_for_summarization_and_translation_using_grok.ipynb">Agent for Summarization and Translation using Grok</a></td>
+      <td><a href="https://github.com/ashish-kamboj/agentic-ai-workflows/blob/main/crewai/wf_agent_for_summarization_and_translation_using_grok.ipynb">Agent for Summarization and Translation using Groq</a></td>
       <td>Demonstrates a simple two-agent workflow using CrewAI:Documentation-Summarizer produces a concise summary and Technical Translator converts the summary to Hindi</b></td>
       <td>No Input as such, it's part of prompt only but can be passed as input</b></td>
       <td>Text Summary and translation in choosen or provided language</td>
       <td>
         <ol>
-          <li>Uses groq/llama-3.3-70b-versatile LLM model, In order to use generate grok API Key from https://console.groq.com/keys</li>
+          <li>Uses groq/llama-3.3-70b-versatile LLM model, In order to use generate groq API Key from https://console.groq.com/keys</li>
           <li>Agents are implemented with CrewAI and interact with the Grok LLM for fast inference.</li>
         </ol>
       </td>
